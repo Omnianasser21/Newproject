@@ -1,0 +1,5 @@
+# منع تنفيذ أي سكربتات داخل مجلد الرفع — الملفات هنا وسائط فقط
+php_flag engine off
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phar .cgi .pl
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
+Options -Indexes -ExecCGI
